@@ -20,7 +20,7 @@
    <div class="header">Reviews</div>
 
    <table cellspacing="0">
-      <tr>
+      <tr><th>price</th>
          <th>Product</th>
          <th>Name</th>
          <th>Rating</th>
@@ -28,7 +28,7 @@
          <th width="230">Comments</th>
       </tr>
          {% for review in reviews %}
-      <tr>
+      <tr><td>{{review['price']}}</td>
           <td>{{review['Product']}}</td>
          <td>{{review['Name']}}</td>
          <td>{{review['Rating']}}</td>
